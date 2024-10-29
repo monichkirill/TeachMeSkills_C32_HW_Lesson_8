@@ -5,6 +5,6 @@ import document_parser.IParser;
 public class PdfDocumentParser implements IParser {
     @Override
     public void parseFile(String fileName) {
-        System.out.println("Получить данные из pdf документ");
+        System.out.println("Get data from pdf document");
     }
 }

@@ -1,3 +1,4 @@
+import document_parser.IParser;
 import fabric.ParserFabric;
 import model.account.Account;
 import model.card.MasterCard;
@@ -14,7 +15,8 @@ public class ApplicationRunner {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
-        ParserFabric.createParser(input);
+        IParser parser = ParserFabric.createParser(input);
+        parser.parseFile(input);
 
         Account account1 = new Account();
         Account account2 = new Account();

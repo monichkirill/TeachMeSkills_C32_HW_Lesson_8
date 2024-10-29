@@ -5,6 +5,6 @@ import document_parser.IParser;
 public class DocxDocumentParser implements IParser {
     @Override
     public void parseFile(String fileName) {
-        System.out.println("Получить данные из docx документ");
+        System.out.println("Get data from docx document");
     }
 }

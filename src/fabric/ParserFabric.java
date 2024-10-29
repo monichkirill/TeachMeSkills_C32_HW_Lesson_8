@@ -10,13 +10,10 @@ public class ParserFabric {
 
         if(fileName.endsWith(".docx")){
             // TODO избавиться от return null и сделать возврат docx парсера
-            System.out.println("Get data from docx document");
             return new DocxDocumentParser();
         } else if (fileName.endsWith(".pdf")) {
-            System.out.println("ПGet data from pdf document");
             return new PdfDocumentParser();
         } else {
-            System.out.println("Get data from txt document");
             return new TxtDocumentParser();
         }
 
